@@ -1,6 +1,18 @@
 # C-Fix evaluation results.
-2016 C-Fix evaluation results.
+2016 C-Fix evaluation results. 
+This repository contains C-Fix generated patches for 56 out of 224 bugs in Defects4j dataset and their human-written patches.
 
+Directories and files have the following structure.
+> - project
+>  - bugname
+>     - buggy (Buggy code)
+>     - cfix (C-Fix patch)
+>        - change.obj (Java obj file of the applied change.)
+>        - edit (String representation of the applied change.)
+>     - fix (Human-written patch)
+>     - cfix.diff (Differences between buggy code & c-fix patch.) 
+>     - fix.diff (Differences between buggy code & human-written patch.)
+>     - patch_info (Simple info. on c-fix patch - Seed:Pool:Candidate#)
 
 # Patch Details
 
