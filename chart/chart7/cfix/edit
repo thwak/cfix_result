@@ -1,0 +1,16 @@
+Class:org.jfree.data.time.TimePeriodValues
+update
+minMiddleIndex
+to
+maxMiddleIndex
+at line 300
+Applied Change
+update
+var0
+at FieldAccess::null[name]
+to
+var0
+from
+hadoop-b268aa0
+4
+P:FieldAccess{name},L:{52},R:

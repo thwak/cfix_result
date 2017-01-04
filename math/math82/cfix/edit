@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.optimization.linear.SimplexSolver
+update
+minValue
+to
+MathUtils.SAFE_MIN
+at line 62
+Applied Change
+update
+var0
+at MethodInvocation::null[arguments]
+to
+var0
+from
+hadoop-a3151c4
+6
+P:MethodInvocation{arguments},L:MethodInvocation{arguments},R:SimpleName{arguments}

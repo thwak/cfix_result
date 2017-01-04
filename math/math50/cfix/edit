@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.analysis.solvers.BaseSecantSolver
+update
+x0
+to
+x1
+at line 189
+Applied Change
+update
+var0
+at MethodInvocation::null[arguments]
+to
+var0
+from
+hadoop-a3151c4
+14
+P:MethodInvocation{arguments},L:{42},R:

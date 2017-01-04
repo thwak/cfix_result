@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math8/buggy/org/apache/commons/math3/distribution/DiscreteDistribution.java	2016-08-31 21:38:05.210269743 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math8/cfix/org/apache/commons/math3/distribution/DiscreteDistribution.java	2016-08-31 21:38:05.202269978 +0900
+@@ -184,7 +184,7 @@
+                     sampleSize);
+         }
+ 
+-        final T[]out = (T[]) java.lang.reflect.Array.newInstance(singletons.get(0).getClass(), sampleSize);
++        final T[]out = (T[]) java.lang.reflect.Array.newInstance(singletons.get(sampleSize).getClass(), sampleSize);
+ 
+         for (int i = 0; i < sampleSize; i++) {
+             out[i] = sample();

@@ -1,0 +1,19 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart25/buggy/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2016-08-31 21:38:05.514260828 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart25/cfix/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2016-08-31 21:38:05.510260945 +0900
+@@ -85,6 +85,7 @@
+ import org.jfree.chart.util.SerialUtilities;
+ import org.jfree.data.category.CategoryDataset;
+ import org.jfree.data.statistics.StatisticalCategoryDataset;
++import java.net.Socket;
+ 
+ /**
+  * A renderer that handles the drawing a bar plot where
+@@ -203,7 +204,7 @@
+         }
+         StatisticalCategoryDataset statData = (StatisticalCategoryDataset) data;
+ 
+-        PlotOrientation orientation = plot.getOrientation();
++        PlotOrientation orientation = null;
+         if (orientation == PlotOrientation.HORIZONTAL) {
+             drawHorizontalItem(g2, state, dataArea, plot, domainAxis, 
+                     rangeAxis, statData, row, column);

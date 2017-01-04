@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math40/buggy/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java	2016-08-31 21:38:03.998305331 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math40/cfix/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java	2016-08-31 21:38:03.974306037 +0900
+@@ -270,7 +270,7 @@
+ 
+                 }
+ 
+-            } while (Double.isNaN(nextX) && (end - start > 1));
++            } while (Double.isNaN(nextX) && (end - agingB - 1 > 1));
+ 
+             if (Double.isNaN(nextX)) {
+                 // fall back to bisection

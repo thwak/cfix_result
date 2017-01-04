@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math81/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.994276077 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math81/cfix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.906278661 +0900
+@@ -1523,7 +1523,7 @@
+                     tau = s;
+ 
+                 }
+-            } else if (dMin == dN2) {
++            } else if (sigma == dN2) {
+ 
+                 // case 5.
+                 tType = -5;

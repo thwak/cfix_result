@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math75/buggy/org/apache/commons/math/stat/Frequency.java	2016-08-31 21:38:04.714284300 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math75/cfix/org/apache/commons/math/stat/Frequency.java	2016-08-31 21:38:04.610287355 +0900
+@@ -300,7 +300,7 @@
+      */
+     @Deprecated
+     public double getPct(Object v) {
+-        return getCumPct((Comparable<?>) v);
++        return getPct((Comparable<?>) v);
+     }
+ 
+     /**

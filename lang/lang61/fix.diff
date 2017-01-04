@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang61/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.950336162 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang61/fix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.954336043 +0900
+@@ -1773,7 +1773,7 @@
+             return -1;
+         }
+         char[] thisBuf = buffer;
+-        int len = thisBuf.length - strLen;
++        int len = size - strLen + 1;
+         outer:
+         for (int i = startIndex; i < len; i++) {
+             for (int j = 0; j < strLen; j++) {

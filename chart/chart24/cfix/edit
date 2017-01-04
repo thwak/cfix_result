@@ -1,0 +1,16 @@
+Class:org.jfree.chart.renderer.GrayPaintScale
+update
+v
+to
+value
+at line 125
+Applied Change
+update
+var0
+at Assignment::=[leftHandSide]
+to
+var0
+from
+hadoop-a33cbca
+2
+P:Assignment{leftHandSide},L:,R:MethodInvocation{rightHandSide}

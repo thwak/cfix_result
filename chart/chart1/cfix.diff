@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart1/buggy/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2016-08-31 21:38:05.366265168 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart1/cfix/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2016-08-31 21:38:05.358265403 +0900
+@@ -1794,7 +1794,7 @@
+         }
+         int index = this.plot.getIndexOf(this);
+         CategoryDataset dataset = this.plot.getDataset(index);
+-        if (dataset != null) {
++        if (SortOrder.DESCENDING == null) {
+             return result;
+         }
+         int seriesCount = dataset.getRowCount();

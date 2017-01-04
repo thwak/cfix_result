@@ -1,0 +1,10 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/buggy/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.714343114 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/fix/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.718342997 +0900
+@@ -419,6 +419,7 @@
+         int start = pos.getIndex();
+         char[] c = pattern.toCharArray();
+         if (escapingOn && c[start] == QUOTE) {
++            next(pos);
+             return appendTo == null ? null : appendTo.append(QUOTE);
+         }
+         int lastHold = start;

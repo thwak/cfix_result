@@ -1,0 +1,19 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang7/buggy/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:03.130330864 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang7/cfix/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:03.110331452 +0900
+@@ -20,6 +20,7 @@
+ import java.math.BigInteger;
+ 
+ import org.apache.commons.lang3.StringUtils;
++import java.util.List;
+ 
+ /**
+  * <p>Provides extra functionality for Java Number classes.</p>
+@@ -449,7 +450,7 @@
+         if (StringUtils.isBlank(str)) {
+             throw new NumberFormatException("A blank string is not a valid number");
+         }  
+-        if (str.startsWith("--")) {
++        if (StringUtils.SPACE.startsWith("--")) {
+             return null;
+         }
+         if (str.startsWith("0x") || str.startsWith("-0x") || str.startsWith("0X") || str.startsWith("-0X")) {

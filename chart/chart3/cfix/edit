@@ -1,0 +1,17 @@
+Class:org.jfree.data.time.TimeSeries
+replace
+fireSeriesChanged()
+with
+findBoundsByIteration();
+
+at line 638
+Applied Change
+replace
+method0()
+at Block::null[statements]
+with
+method0()
+from
+derby-d92fa8c
+5
+P:IfStatement{statements},L:,R:

@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math82/buggy/org/apache/commons/math/optimization/linear/SimplexSolver.java	2016-08-31 21:38:05.058274200 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math82/cfix/org/apache/commons/math/optimization/linear/SimplexSolver.java	2016-08-31 21:38:05.050274435 +0900
+@@ -59,7 +59,7 @@
+         double minValue = 0;
+         Integer minPos = null;
+         for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+-            if (MathUtils.compareTo(tableau.getEntry(0, i), minValue, epsilon) < 0) {
++            if (MathUtils.compareTo(tableau.getEntry(0, i), MathUtils.SAFE_MIN, epsilon) < 0) {
+                 minValue = tableau.getEntry(0, i);
+                 minPos = i;
+             }

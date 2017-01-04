@@ -1,0 +1,18 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/time/time11/buggy/org/joda/time/tz/ZoneInfoCompiler.java	2016-08-31 21:38:05.878250154 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/time/time11/fix/org/joda/time/tz/ZoneInfoCompiler.java	2016-08-31 21:38:05.898249567 +0900
+@@ -65,10 +65,11 @@
+ 
+     static Chronology cLenientISO;
+ 
+-    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>();
+-    static {
+-        cVerbose.set(Boolean.FALSE);
+-    }
++    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>() {
++        protected Boolean initialValue() {
++            return Boolean.FALSE;
++        }
++    };
+ 
+     /**
+      * Gets a flag indicating that verbose logging is required.

@@ -1,0 +1,12 @@
+Class:org.jfree.chart.plot.XYPlot
+delete
+r
+at line 4493
+Applied Change
+delete
+var0
+at MethodInvocation::null[expression]
+from
+hadoop-c1ee3ce
+1
+P:MethodInvocation{expression},L:,R:{42}

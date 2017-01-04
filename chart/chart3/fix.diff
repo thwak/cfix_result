@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.642257074 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/fix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.646256957 +0900
+@@ -1054,6 +1054,8 @@
+             throw new IllegalArgumentException("Requires start <= end.");
+         }
+         TimeSeries copy = (TimeSeries) super.clone();
++        copy.minY = Double.NaN;
++        copy.maxY = Double.NaN;
+         copy.data = new java.util.ArrayList();
+         if (this.data.size() > 0) {
+             for (int index = start; index <= end; index++) {

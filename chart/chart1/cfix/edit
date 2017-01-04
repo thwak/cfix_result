@@ -1,0 +1,16 @@
+Class:org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+replace
+dataset != null
+with
+SortOrder.DESCENDING == null
+at line 1797
+Applied Change
+replace
+var0 == null
+at IfStatement::null[expression]
+with
+var0 == null
+from
+hadoop-bdeee31
+1
+P:IfStatement{expression},L:,R:{8{41{42}}}

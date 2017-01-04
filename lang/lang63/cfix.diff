@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang63/buggy/org/apache/commons/lang/time/DurationFormatUtils.java	2016-08-31 21:38:03.038333571 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang63/cfix/org/apache/commons/lang/time/DurationFormatUtils.java	2016-08-31 21:38:02.978335336 +0900
+@@ -435,7 +435,7 @@
+         int startValue = start.get(field);
+         if (endValue < startValue) {
+             int newdiff = startValue - endValue;
+-            end.add( field, newdiff );
++            end.set( field, newdiff );
+             return newdiff;
+         } else {
+             return 0;

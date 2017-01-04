@@ -1,0 +1,20 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang10/buggy/org/apache/commons/lang3/time/FastDateParser.java	2016-08-31 21:38:02.478350068 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang10/fix/org/apache/commons/lang3/time/FastDateParser.java	2016-08-31 21:38:02.486349832 +0900
+@@ -301,17 +301,8 @@
+      * @return The <code>StringBuilder</code>
+      */
+     private static StringBuilder escapeRegex(StringBuilder regex, String value, boolean unquote) {
+-        boolean wasWhite= false;
+         for(int i= 0; i<value.length(); ++i) {
+             char c= value.charAt(i);
+-            if(Character.isWhitespace(c)) {
+-                if(!wasWhite) {
+-                    wasWhite= true;
+-                    regex.append("\\s*+");
+-                }
+-                continue;
+-            }
+-            wasWhite= false;
+             switch(c) {
+             case '\'':
+                 if(unquote) {

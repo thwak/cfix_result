@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+replace
+start
+with
+agingB - 1
+at line 273
+Applied Change
+replace
+var0
+at InfixExpression::<[rightOperand]
+with
+var0-1
+from
+lucene-9716742
+1
+P:InfixExpression{rightOperand},L:{42},R:

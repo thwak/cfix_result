@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math20/buggy/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.270326747 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math20/cfix/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.230327922 +0900
+@@ -1129,7 +1129,7 @@
+         double[][] d = new double[1][m.getColumnDimension()];
+         for (int c = 0; c < m.getColumnDimension(); c++) {
+             double sum = 0;
+-            for (int r = 0; r < m.getRowDimension(); r++) {
++            for (int r = 1; r < m.getRowDimension(); r++) {
+                 sum += m.getEntry(r, c);
+             }
+             d[0][c] = sum;

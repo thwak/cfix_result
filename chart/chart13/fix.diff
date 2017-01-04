@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart13/buggy/org/jfree/chart/block/BorderArrangement.java	2016-08-31 21:38:05.342265872 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart13/fix/org/jfree/chart/block/BorderArrangement.java	2016-08-31 21:38:05.346265755 +0900
+@@ -452,7 +452,7 @@
+         h[3] = h[2];
+         if (this.rightBlock != null) {
+             RectangleConstraint c4 = new RectangleConstraint(0.0,
+-                    new Range(0.0, constraint.getWidth() - w[2]),
++                    new Range(0.0, Math.max(constraint.getWidth() - w[2], 0.0)),
+                     LengthConstraintType.RANGE, h[2], null,
+                     LengthConstraintType.FIXED);
+             Size2D size = this.rightBlock.arrange(g2, c4);

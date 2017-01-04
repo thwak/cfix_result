@@ -1,0 +1,12 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math7/buggy/org/apache/commons/math3/ode/AbstractIntegrator.java	2016-08-31 21:38:04.750283243 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math7/cfix/org/apache/commons/math3/ode/AbstractIntegrator.java	2016-08-31 21:38:04.742283478 +0900
+@@ -106,7 +106,8 @@
+ 
+     /** {@inheritDoc} */
+     public void addStepHandler(final StepHandler handler) {
+-        stepHandlers.add(handler);
++        clearEventHandlers();
++		stepHandlers.add(handler);
+     }
+ 
+     /** {@inheritDoc} */

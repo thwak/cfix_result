@@ -1,0 +1,16 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/buggy/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.554259655 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/fix/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.626257544 +0900
+@@ -1189,11 +1189,13 @@
+         }
+         if (plotState != null && hotspot != null) {
+             ChartRenderingInfo owner = plotState.getOwner();
++            if (owner != null) {
+                 EntityCollection entities = owner.getEntityCollection();
+                 if (entities != null) {
+                     entities.add(new AxisLabelEntity(this, hotspot, 
+                             this.labelToolTip, this.labelURL));
+                 }
++            }
+         }
+         return state;
+ 

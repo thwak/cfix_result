@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizer
+update
+bound1
+to
+min
+at line 162
+Applied Change
+update
+var0
+at MethodInvocation::null[arguments]
+to
+var0
+from
+hadoop-3532b9d
+4
+P:MethodInvocation{arguments},L:SimpleName{name},R:SimpleName{arguments}

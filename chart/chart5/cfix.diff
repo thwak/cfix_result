@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart5/buggy/org/jfree/data/xy/XYSeries.java	2016-08-31 21:38:05.710255080 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart5/cfix/org/jfree/data/xy/XYSeries.java	2016-08-31 21:38:05.702255315 +0900
+@@ -524,7 +524,7 @@
+      * @since 1.0.10
+      */
+     public XYDataItem addOrUpdate(double x, double y) {
+-        return addOrUpdate(new Double(x), new Double(y));
++        return addOrUpdate(new Double(y), new Double(y));
+     }
+ 
+     /**

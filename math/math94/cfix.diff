@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math94/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:05.258268335 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math94/cfix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:05.234269039 +0900
+@@ -409,7 +409,7 @@
+      * @since 1.1
+      */
+     public static int gcd(int u, int v) {
+-        if (u * v == 0) {
++        if (((double) u) * v == 0) {
+             return (Math.abs(u) + Math.abs(v));
+         }
+         // keep u and v negative, as negative integers range down to

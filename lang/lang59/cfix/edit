@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang.text.StrBuilder
+replace
+size
+with
+SystemUtils.JAVA_VERSION_INT
+at line 880
+Applied Change
+replace
+var0
+at InfixExpression::>[leftOperand]
+with
+var0
+from
+derby-5b9a6d9
+1
+P:InfixExpression{leftOperand},L:,R:{42}

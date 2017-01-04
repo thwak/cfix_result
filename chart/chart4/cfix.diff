@@ -1,0 +1,19 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/buggy/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.678256019 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/cfix/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.658256605 +0900
+@@ -298,6 +298,7 @@
+ import org.jfree.data.xy.SelectableXYDataset;
+ import org.jfree.data.xy.XYDataset;
+ import org.jfree.data.xy.XYDatasetSelectionState;
++import java.util.LinkedList;
+ 
+ /**
+  * A general class for plotting data in the form of (x, y) pairs.  This plot can
+@@ -4490,7 +4491,7 @@
+                     }
+                 }
+                 
+-                    Collection c = r.getAnnotations();
++                    Collection c = getAnnotations();
+                     Iterator i = c.iterator();
+                     while (i.hasNext()) {
+                         XYAnnotation a = (XYAnnotation) i.next();

@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang6/buggy/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java	2016-08-31 21:38:03.098331806 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang6/cfix/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java	2016-08-31 21:38:03.094331923 +0900
+@@ -92,7 +92,7 @@
+ //          // contract with translators is that they have to understand codepoints 
+ //          // and they just took care of a surrogate pair
+             for (int pt = 0; pt < consumed; pt++) {
+-                pos += Character.charCount(Character.codePointAt(input, pos));
++                pos += Character.charCount(Character.codePointAt(input, pt));
+             }
+         }
+     }

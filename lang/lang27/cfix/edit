@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang3.math.NumberUtils
+update
+str
+to
+StringUtils.EMPTY
+at line 474
+Applied Change
+update
+var0
+at MethodInvocation::null[expression]
+to
+var0
+from
+hadoop-3532b9d
+10
+P:MethodInvocation{expression},L:,R:{42}

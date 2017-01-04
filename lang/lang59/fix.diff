@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang59/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.782341111 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang59/fix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.810340286 +0900
+@@ -881,7 +881,7 @@
+             String str = (obj == null ? getNullText() : obj.toString());
+             int strLen = str.length();
+             if (strLen >= width) {
+-                str.getChars(0, strLen, buffer, size);
++                str.getChars(0, width, buffer, size);
+             } else {
+                 int padLen = width - strLen;
+                 str.getChars(0, strLen, buffer, size);

@@ -1,0 +1,12 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart6/buggy/org/jfree/chart/util/ShapeList.java	2016-08-31 21:38:05.782252969 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart6/cfix/org/jfree/chart/util/ShapeList.java	2016-08-31 21:38:05.718254846 +0900
+@@ -78,7 +78,8 @@
+      * @param shape  the {@link Shape}.
+      */
+     public void setShape(int index, Shape shape) {
+-        set(index, shape);
++        index = 0;
++		set(index, shape);
+     }
+ 
+     /**

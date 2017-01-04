@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.642257074 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/cfix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.634257309 +0900
+@@ -635,7 +635,7 @@
+                                      // don't notify anyone, because that
+                                      // happens next anyway...
+             if (notify) {
+-                fireSeriesChanged();
++                findBoundsByIteration();;
+             }
+         }
+ 

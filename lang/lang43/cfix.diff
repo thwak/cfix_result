@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/buggy/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.714343114 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/cfix/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.702343468 +0900
+@@ -155,7 +155,7 @@
+         while (pos.getIndex() < pattern.length()) {
+             switch (c[pos.getIndex()]) {
+             case QUOTE:
+-                appendQuotedString(pattern, pos, stripCustom, true);
++                appendQuotedString(pattern, pos, stripCustom, false);
+                 break;
+             case START_FE:
+                 fmtCount++;

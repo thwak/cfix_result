@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.stat.Frequency
+update
+getCumPct
+to
+getPct
+at line 303
+Applied Change
+update
+method0
+at MethodInvocation::null[name]
+to
+method0
+from
+derby-6d4d95d
+2
+P:MethodInvocation{name},L:,R:CastExpression{arguments}

@@ -1,0 +1,12 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/buggy/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.554259655 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/cfix/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.542260007 +0900
+@@ -896,7 +896,8 @@
+      * @see #getPlot()
+      */
+     public void setPlot(Plot plot) {
+-        this.plot = plot;
++        this.label = plot.getNoDataMessage();
++		this.plot = plot;
+         configure();
+     }
+ 

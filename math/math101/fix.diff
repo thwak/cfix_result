@@ -1,0 +1,12 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math101/buggy/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.186329217 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math101/fix/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.214328393 +0900
+@@ -374,7 +374,8 @@
+         int n = getImaginaryCharacter().length();
+         startIndex = pos.getIndex();
+         int endIndex = startIndex + n;
+-        if (
++        if ((startIndex >= source.length()) ||
++            (endIndex > source.length()) ||
+             source.substring(startIndex, endIndex).compareTo(
+             getImaginaryCharacter()) != 0) {
+             // set index back to initial, error index should be the start index

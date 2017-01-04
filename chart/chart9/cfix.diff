@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart9/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.826251678 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart9/cfix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.822251796 +0900
+@@ -941,7 +941,7 @@
+             endIndex = -(endIndex + 1); // this is first item AFTER end period
+             endIndex = endIndex - 1;    // so this is last item BEFORE end
+         }
+-        if (endIndex < 0) {
++        if (endIndex < startIndex) {
+             emptyRange = true;
+         }
+         if (emptyRange) {

@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math80/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.802281716 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math80/cfix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.786282186 +0900
+@@ -1133,7 +1133,7 @@
+         if (1.5 * work[pingPong] < work[4 * (n - 1) + pingPong]) {
+             // flip array
+             int j = 4 * n - 1;
+-            for (int i = 0; i < j; i += 4) {
++            for (int i = 0; j < j; i += 4) {
+                 for (int k = 0; k < 4; k += step) {
+                     final double tmp = work[i + k];
+                     work[i + k] = work[j - k];

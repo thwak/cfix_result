@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart7/buggy/org/jfree/data/time/TimePeriodValues.java	2016-08-31 21:38:05.810252148 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart7/cfix/org/jfree/data/time/TimePeriodValues.java	2016-08-31 21:38:05.810252148 +0900
+@@ -297,7 +297,7 @@
+         }
+         
+         if (this.maxMiddleIndex >= 0) {
+-            long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()
++            long s = getDataItem(this.maxMiddleIndex).getPeriod().getStart()
+                 .getTime();
+             long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()
+                 .getTime();

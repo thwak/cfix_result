@@ -1,0 +1,13 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/time/time7/buggy/org/joda/time/format/DateTimeFormatter.java	2016-08-31 21:38:06.322237147 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/time/time7/fix/org/joda/time/format/DateTimeFormatter.java	2016-08-31 21:38:06.370235742 +0900
+@@ -705,9 +705,9 @@
+         
+         long instantMillis = instant.getMillis();
+         Chronology chrono = instant.getChronology();
++        int defaultYear = DateTimeUtils.getChronology(chrono).year().get(instantMillis);
+         long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);
+         chrono = selectChronology(chrono);
+-        int defaultYear = chrono.year().get(instantLocal);
+         
+         DateTimeParserBucket bucket = new DateTimeParserBucket(
+             instantLocal, chrono, iLocale, iPivotYear, defaultYear);

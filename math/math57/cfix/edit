@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer
+replace
+0
+with
++1
+at line 99
+Applied Change
+replace
+0
+at InfixExpression::>[rightOperand]
+with
+-1
+from
+derby-a8b60da
+2
+P:InfixExpression{rightOperand},L:{42},R:

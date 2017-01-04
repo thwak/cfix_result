@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils
+update
+fb
+to
+b
+at line 198
+Applied Change
+update
+var0
+at InfixExpression::<[rightOperand]
+to
+var0
+from
+hadoop-f7064d7
+2
+P:InfixExpression{rightOperand},L:{42},R:

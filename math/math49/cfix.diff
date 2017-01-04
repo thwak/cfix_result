@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math49/buggy/org/apache/commons/math/linear/OpenMapRealVector.java	2016-08-31 21:38:04.134301336 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math49/cfix/org/apache/commons/math/linear/OpenMapRealVector.java	2016-08-31 21:38:04.134301336 +0900
+@@ -661,7 +661,7 @@
+     /** {@inheritDoc} */
+     public void setEntry(int index, double value) {
+         checkIndex(index);
+-        if (!isDefaultValue(value)) {
++        if (!isDefaultValue(epsilon)) {
+             entries.put(index, value);
+         } else if (entries.containsKey(index)) {
+             entries.remove(index);

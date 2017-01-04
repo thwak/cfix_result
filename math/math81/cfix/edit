@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.linear.EigenDecompositionImpl
+update
+dMin
+to
+sigma
+at line 1526
+Applied Change
+update
+var0
+at InfixExpression::<[leftOperand]
+to
+var0
+from
+hadoop-b6354ec
+10
+P:InfixExpression{leftOperand},L:,R:{42}

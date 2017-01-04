@@ -1,0 +1,16 @@
+Class:org.jfree.chart.block.BorderArrangement
+update
+w
+to
+h
+at line 450
+Applied Change
+update
+var0
+at ArrayAccess::null[array]
+to
+var0
+from
+hadoop-0815a6f
+2
+P:ArrayAccess{array},L:,R:{34}

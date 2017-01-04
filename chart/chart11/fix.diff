@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart11/buggy/org/jfree/chart/util/ShapeUtilities.java	2016-08-31 21:38:05.302267045 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart11/fix/org/jfree/chart/util/ShapeUtilities.java	2016-08-31 21:38:05.330266224 +0900
+@@ -272,7 +272,7 @@
+             return false;
+         }
+         PathIterator iterator1 = p1.getPathIterator(null);
+-        PathIterator iterator2 = p1.getPathIterator(null);
++        PathIterator iterator2 = p2.getPathIterator(null);
+         double[] d1 = new double[6];
+         double[] d2 = new double[6];
+         boolean done = iterator1.isDone() && iterator2.isDone();

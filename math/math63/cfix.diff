@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math63/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.506290410 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math63/cfix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.482291114 +0900
+@@ -414,7 +414,7 @@
+      * @return {@code true} if the values are equal.
+      */
+     public static boolean equals(double x, double y) {
+-        return (Double.isNaN(x) && Double.isNaN(y)) || x == y;
++        return (Double.isNaN(SAFE_MIN) && Double.isNaN(y)) || x == y;
+     }
+ 
+     /**

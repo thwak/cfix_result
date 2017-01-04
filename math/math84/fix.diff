@@ -1,0 +1,27 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math84/buggy/org/apache/commons/math/optimization/direct/MultiDirectional.java	2016-08-31 21:38:05.106272793 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math84/fix/org/apache/commons/math/optimization/direct/MultiDirectional.java	2016-08-31 21:38:05.114272558 +0900
+@@ -61,6 +61,7 @@
+     protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)
+         throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
+ 
++        final RealConvergenceChecker checker = getConvergenceChecker();
+         while (true) {
+ 
+             incrementIterationsCounter();
+@@ -89,8 +90,16 @@
+             final RealPointValuePair contracted = evaluateNewSimplex(original, gamma, comparator);
+             if (comparator.compare(contracted, best) < 0) {
+                 // accept the contracted simplex
++                return;
++            }
+ 
+             // check convergence
++            final int iter = getIterations();
++            boolean converged = true;
++            for (int i = 0; i < simplex.length; ++i) {
++                converged &= checker.converged(iter, original[i], simplex[i]);
++            }
++            if (converged) {
+                 return;
+             }
+ 

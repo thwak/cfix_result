@@ -1,0 +1,14 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math101/buggy/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.186329217 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math101/cfix/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.166329806 +0900
+@@ -318,7 +318,10 @@
+      * @return the parsed {@link Complex} object.
+      */
+     public Complex parse(String source, ParsePosition pos) {
+-        int initialIndex = pos.getIndex();
++        if (source.charAt(source.length() - 1) != Locale.UNICODE_LOCALE_EXTENSION) {
++			source += Locale.UNICODE_LOCALE_EXTENSION;
++		}
++		int initialIndex = pos.getIndex();
+ 
+         // parse whitespace
+         parseAndIgnoreWhitespace(source, pos);

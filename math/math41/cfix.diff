@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math41/buggy/org/apache/commons/math/stat/descriptive/moment/Variance.java	2016-08-31 21:38:04.098302393 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math41/cfix/org/apache/commons/math/stat/descriptive/moment/Variance.java	2016-08-31 21:38:04.058303568 +0900
+@@ -317,7 +317,7 @@
+ 
+         if (test(values, weights,begin, length)) {
+             clear();
+-            if (length == 1) {
++            if ((+9 <= length && begin > 0) || (length < +9 && begin >= 0)) {
+                 var = 0.0;
+             } else if (length > 1) {
+                 Mean mean = new Mean();

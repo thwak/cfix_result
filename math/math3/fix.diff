@@ -1,0 +1,13 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math3/buggy/org/apache/commons/math3/util/MathArrays.java	2016-08-31 21:38:03.922307567 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math3/fix/org/apache/commons/math3/util/MathArrays.java	2016-08-31 21:38:03.950306743 +0900
+@@ -818,7 +818,10 @@
+             throw new DimensionMismatchException(len, b.length);
+         }
+ 
++        if (len == 1) {
+             // Revert to scalar multiplication.
++            return a[0] * b[0];
++        }
+ 
+         final double[] prodHigh = new double[len];
+         double prodLowSum = 0;

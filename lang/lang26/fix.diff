@@ -1,0 +1,11 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/lang/lang26/buggy/org/apache/commons/lang3/time/FastDateFormat.java	2016-08-31 21:38:02.542348182 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang26/fix/org/apache/commons/lang3/time/FastDateFormat.java	2016-08-31 21:38:02.546348065 +0900
+@@ -817,7 +817,7 @@
+      * @return the formatted string
+      */
+     public String format(Date date) {
+-        Calendar c = new GregorianCalendar(mTimeZone);
++        Calendar c = new GregorianCalendar(mTimeZone, mLocale);
+         c.setTime(date);
+         return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();
+     }

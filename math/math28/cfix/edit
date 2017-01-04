@@ -1,0 +1,12 @@
+Class:org.apache.commons.math3.optimization.linear.SimplexSolver
+delete
+minRatioPositions.add(i)
+at line 104
+Applied Change
+delete
+var0.putAll(var1)
+at IfStatement::null[statements]
+from
+ivy-425c28f
+2
+P:IfStatement{statements},L:,R:

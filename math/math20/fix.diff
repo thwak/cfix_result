@@ -1,0 +1,12 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/math/math20/buggy/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.270326747 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/math/math20/fix/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.282326393 +0900
+@@ -918,7 +918,8 @@
+          * @return the original objective variables, possibly repaired.
+          */
+         public double[] repairAndDecode(final double[] x) {
+-            return
++            return boundaries != null && isRepairMode ?
++                decode(repair(x)) :
+                 decode(x);
+         }
+ 

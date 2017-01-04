@@ -1,0 +1,18 @@
+--- /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/buggy/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.678256019 +0900
++++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/fix/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.686255784 +0900
+@@ -4490,6 +4490,7 @@
+                     }
+                 }
+                 
++                if (r != null) {
+                     Collection c = r.getAnnotations();
+                     Iterator i = c.iterator();
+                     while (i.hasNext()) {
+@@ -4498,6 +4499,7 @@
+                             includedAnnotations.add(a);
+                         }
+                     }
++                }
+             }
+         }
+ 
