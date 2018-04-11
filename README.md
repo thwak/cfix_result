@@ -16,8 +16,8 @@ Directories and files have the following structure.
 
 # Patch Details
 
-##chart1
-###Human
+## chart1
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart1/buggy/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2016-08-31 21:38:05.366265168 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart1/fix/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2016-08-31 21:38:05.378264816 +0900
@@ -31,7 +31,7 @@ Directories and files have the following structure.
          }
          int seriesCount = dataset.getRowCount();
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart1/buggy/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2016-08-31 21:38:05.366265168 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart1/cfix/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java	2016-08-31 21:38:05.358265403 +0900
@@ -46,8 +46,8 @@ Directories and files have the following structure.
          int seriesCount = dataset.getRowCount();
 ```
 
-##chart11
-###Human
+## chart11
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart11/buggy/org/jfree/chart/util/ShapeUtilities.java	2016-08-31 21:38:05.302267045 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart11/fix/org/jfree/chart/util/ShapeUtilities.java	2016-08-31 21:38:05.330266224 +0900
@@ -61,7 +61,7 @@ Directories and files have the following structure.
          double[] d2 = new double[6];
          boolean done = iterator1.isDone() && iterator2.isDone();
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart11/buggy/org/jfree/chart/util/ShapeUtilities.java	2016-08-31 21:38:05.302267045 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart11/cfix/org/jfree/chart/util/ShapeUtilities.java	2016-08-31 21:38:05.278267749 +0900
@@ -84,8 +84,8 @@ Directories and files have the following structure.
          double[] d2 = new double[6];
 ```
 
-##chart13
-###Human
+## chart13
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart13/buggy/org/jfree/chart/block/BorderArrangement.java	2016-08-31 21:38:05.342265872 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart13/fix/org/jfree/chart/block/BorderArrangement.java	2016-08-31 21:38:05.346265755 +0900
@@ -99,7 +99,7 @@ Directories and files have the following structure.
                      LengthConstraintType.FIXED);
              Size2D size = this.rightBlock.arrange(g2, c4);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart13/buggy/org/jfree/chart/block/BorderArrangement.java	2016-08-31 21:38:05.342265872 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart13/cfix/org/jfree/chart/block/BorderArrangement.java	2016-08-31 21:38:05.338265989 +0900
@@ -114,8 +114,8 @@ Directories and files have the following structure.
          if (this.rightBlock != null) {
 ```
 
-##chart24
-###Human
+## chart24
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart24/buggy/org/jfree/chart/renderer/GrayPaintScale.java	2016-08-31 21:38:05.454262588 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart24/fix/org/jfree/chart/renderer/GrayPaintScale.java	2016-08-31 21:38:05.506261063 +0900
@@ -129,7 +129,7 @@ Directories and files have the following structure.
          return new Color(g, g, g);
      }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart24/buggy/org/jfree/chart/renderer/GrayPaintScale.java	2016-08-31 21:38:05.454262588 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart24/cfix/org/jfree/chart/renderer/GrayPaintScale.java	2016-08-31 21:38:05.386264582 +0900
@@ -144,8 +144,8 @@ Directories and files have the following structure.
          return new Color(g, g, g);
 ```
 
-##chart25
-###Human
+## chart25
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart25/buggy/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2016-08-31 21:38:05.514260828 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart25/fix/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2016-08-31 21:38:05.530260359 +0900
@@ -208,7 +208,7 @@ Directories and files have the following structure.
          CategoryItemLabelGenerator generator = getItemLabelGenerator(row, 
                  column);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart25/buggy/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2016-08-31 21:38:05.514260828 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart25/cfix/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2016-08-31 21:38:05.510260945 +0900
@@ -231,8 +231,8 @@ Directories and files have the following structure.
                      rangeAxis, statData, row, column);
 ```
 
-##chart26
-###Human
+## chart26
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/buggy/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.554259655 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/fix/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.626257544 +0900
@@ -251,7 +251,7 @@ Directories and files have the following structure.
          return state;
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/buggy/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.554259655 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart26/cfix/org/jfree/chart/axis/Axis.java	2016-08-31 21:38:05.542260007 +0900
@@ -267,8 +267,8 @@ Directories and files have the following structure.
  
 ```
 
-##chart3
-###Human
+## chart3
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.642257074 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/fix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.646256957 +0900
@@ -282,7 +282,7 @@ Directories and files have the following structure.
          if (this.data.size() > 0) {
              for (int index = start; index <= end; index++) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.642257074 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart3/cfix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.634257309 +0900
@@ -297,8 +297,8 @@ Directories and files have the following structure.
  
 ```
 
-##chart4
-###Human
+## chart4
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/buggy/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.678256019 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/fix/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.686255784 +0900
@@ -319,7 +319,7 @@ Directories and files have the following structure.
          }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/buggy/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.678256019 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart4/cfix/org/jfree/chart/plot/XYPlot.java	2016-08-31 21:38:05.658256605 +0900
@@ -342,8 +342,8 @@ Directories and files have the following structure.
                          XYAnnotation a = (XYAnnotation) i.next();
 ```
 
-##chart5
-###Human
+## chart5
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart5/buggy/org/jfree/data/xy/XYSeries.java	2016-08-31 21:38:05.710255080 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart5/fix/org/jfree/data/xy/XYSeries.java	2016-08-31 21:38:05.710255080 +0900
@@ -365,7 +365,7 @@ Directories and files have the following structure.
              try {
                  overwritten = (XYDataItem) existing.clone();
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart5/buggy/org/jfree/data/xy/XYSeries.java	2016-08-31 21:38:05.710255080 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart5/cfix/org/jfree/data/xy/XYSeries.java	2016-08-31 21:38:05.702255315 +0900
@@ -380,8 +380,8 @@ Directories and files have the following structure.
      /**
 ```
 
-##chart6
-###Human
+## chart6
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart6/buggy/org/jfree/chart/util/ShapeList.java	2016-08-31 21:38:05.782252969 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart6/fix/org/jfree/chart/util/ShapeList.java	2016-08-31 21:38:05.806252265 +0900
@@ -402,7 +402,7 @@ Directories and files have the following structure.
      }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart6/buggy/org/jfree/chart/util/ShapeList.java	2016-08-31 21:38:05.782252969 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart6/cfix/org/jfree/chart/util/ShapeList.java	2016-08-31 21:38:05.718254846 +0900
@@ -418,8 +418,8 @@ Directories and files have the following structure.
      /**
 ```
 
-##chart7
-###Human
+## chart7
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart7/buggy/org/jfree/data/time/TimePeriodValues.java	2016-08-31 21:38:05.810252148 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart7/fix/org/jfree/data/time/TimePeriodValues.java	2016-08-31 21:38:05.814252030 +0900
@@ -436,7 +436,7 @@ Directories and files have the following structure.
              long maxMiddle = s + (e - s) / 2;
              if (middle > maxMiddle) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart7/buggy/org/jfree/data/time/TimePeriodValues.java	2016-08-31 21:38:05.810252148 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart7/cfix/org/jfree/data/time/TimePeriodValues.java	2016-08-31 21:38:05.810252148 +0900
@@ -451,8 +451,8 @@ Directories and files have the following structure.
                  .getTime();
 ```
 
-##chart9
-###Human
+## chart9
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart9/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.826251678 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart9/fix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.846251092 +0900
@@ -466,7 +466,7 @@ Directories and files have the following structure.
          }
          if (emptyRange) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/chart/chart9/buggy/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.826251678 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/chart/chart9/cfix/org/jfree/data/time/TimeSeries.java	2016-08-31 21:38:05.822251796 +0900
@@ -481,8 +481,8 @@ Directories and files have the following structure.
          if (emptyRange) {
 ```
 
-##lang10
-###Human
+## lang10
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang10/buggy/org/apache/commons/lang3/time/FastDateParser.java	2016-08-31 21:38:02.478350068 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang10/fix/org/apache/commons/lang3/time/FastDateParser.java	2016-08-31 21:38:02.486349832 +0900
@@ -505,7 +505,7 @@ Directories and files have the following structure.
              case '\'':
                  if(unquote) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang10/buggy/org/apache/commons/lang3/time/FastDateParser.java	2016-08-31 21:38:02.478350068 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang10/cfix/org/apache/commons/lang3/time/FastDateParser.java	2016-08-31 21:38:02.470350303 +0900
@@ -520,8 +520,8 @@ Directories and files have the following structure.
                      regex.append("\\s*+");
 ```
 
-##lang22
-###Human
+## lang22
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang22/buggy/org/apache/commons/lang3/math/Fraction.java	2016-08-31 21:38:02.522348772 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang22/fix/org/apache/commons/lang3/math/Fraction.java	2016-08-31 21:38:02.526348653 +0900
@@ -542,7 +542,7 @@ Directories and files have the following structure.
          }
          // keep u and v negative, as negative integers range down to
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang22/buggy/org/apache/commons/lang3/math/Fraction.java	2016-08-31 21:38:02.522348772 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang22/cfix/org/apache/commons/lang3/math/Fraction.java	2016-08-31 21:38:02.514349007 +0900
@@ -557,8 +557,8 @@ Directories and files have the following structure.
          // keep u and v negative, as negative integers range down to
 ```
 
-##lang26
-###Human
+## lang26
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang26/buggy/org/apache/commons/lang3/time/FastDateFormat.java	2016-08-31 21:38:02.542348182 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang26/fix/org/apache/commons/lang3/time/FastDateFormat.java	2016-08-31 21:38:02.546348065 +0900
@@ -572,7 +572,7 @@ Directories and files have the following structure.
          return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();
      }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang26/buggy/org/apache/commons/lang3/time/FastDateFormat.java	2016-08-31 21:38:02.542348182 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang26/cfix/org/apache/commons/lang3/time/FastDateFormat.java	2016-08-31 21:38:02.538348300 +0900
@@ -587,8 +587,8 @@ Directories and files have the following structure.
      }
 ```
 
-##lang27
-###Human
+## lang27
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang27/buggy/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:02.582347004 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang27/fix/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:02.606346296 +0900
@@ -612,7 +612,7 @@ Directories and files have the following structure.
              } else {
                  mant = str;
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang27/buggy/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:02.582347004 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang27/cfix/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:02.562347593 +0900
@@ -635,8 +635,8 @@ Directories and files have the following structure.
  
 ```
 
-##lang31
-###Human
+## lang31
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang31/buggy/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.630345589 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang31/fix/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.638345354 +0900
@@ -663,7 +663,7 @@ Directories and files have the following structure.
  			}
  		}
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang31/buggy/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.630345589 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang31/cfix/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.622345825 +0900
@@ -678,8 +678,8 @@ Directories and files have the following structure.
  				if (searchChars[j] == ch) {
 ```
 
-##lang39
-###Human
+## lang39
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang39/buggy/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.678344175 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang39/fix/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.686343939 +0900
@@ -694,7 +694,7 @@ Directories and files have the following structure.
              if (greater > 0) {
                  increase += 3 * greater; // assume 3 matches
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang39/buggy/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.678344175 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang39/cfix/org/apache/commons/lang3/StringUtils.java	2016-08-31 21:38:02.662344647 +0900
@@ -709,8 +709,8 @@ Directories and files have the following structure.
              }
 ```
 
-##lang43
-###Human
+## lang43
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/buggy/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.714343114 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/fix/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.718342997 +0900
@@ -723,7 +723,7 @@ Directories and files have the following structure.
          }
          int lastHold = start;
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/buggy/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.714343114 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang43/cfix/org/apache/commons/lang/text/ExtendedMessageFormat.java	2016-08-31 21:38:02.702343468 +0900
@@ -738,8 +738,8 @@ Directories and files have the following structure.
                  fmtCount++;
 ```
 
-##lang59
-###Human
+## lang59
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang59/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.782341111 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang59/fix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.810340286 +0900
@@ -753,7 +753,7 @@ Directories and files have the following structure.
                  int padLen = width - strLen;
                  str.getChars(0, strLen, buffer, size);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang59/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.782341111 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang59/cfix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.738342407 +0900
@@ -768,8 +768,8 @@ Directories and files have the following structure.
              if (strLen >= width) {
 ```
 
-##lang6
-###Human
+## lang6
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang6/buggy/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java	2016-08-31 21:38:03.098331806 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang6/fix/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java	2016-08-31 21:38:03.102331688 +0900
@@ -783,7 +783,7 @@ Directories and files have the following structure.
          }
      }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang6/buggy/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java	2016-08-31 21:38:03.098331806 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang6/cfix/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java	2016-08-31 21:38:03.094331923 +0900
@@ -798,8 +798,8 @@ Directories and files have the following structure.
      }
 ```
 
-##lang60
-###Human
+## lang60
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang60/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.866338637 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang60/fix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.874338400 +0900
@@ -822,7 +822,7 @@ Directories and files have the following structure.
                  return i;
              }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang60/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.866338637 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang60/cfix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.826339815 +0900
@@ -837,8 +837,8 @@ Directories and files have the following structure.
  
 ```
 
-##lang61
-###Human
+## lang61
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang61/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.950336162 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang61/fix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.954336043 +0900
@@ -852,7 +852,7 @@ Directories and files have the following structure.
          for (int i = startIndex; i < len; i++) {
              for (int j = 0; j < strLen; j++) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang61/buggy/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.950336162 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang61/cfix/org/apache/commons/lang/text/StrBuilder.java	2016-08-31 21:38:02.910337340 +0900
@@ -867,8 +867,8 @@ Directories and files have the following structure.
                      continue outer;
 ```
 
-##lang63
-###Human
+## lang63
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang63/buggy/org/apache/commons/lang/time/DurationFormatUtils.java	2016-08-31 21:38:03.038333571 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang63/fix/org/apache/commons/lang/time/DurationFormatUtils.java	2016-08-31 21:38:03.090332041 +0900
@@ -921,7 +921,7 @@ Directories and files have the following structure.
      static final Object y = "y";
      static final Object M = "M";
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang63/buggy/org/apache/commons/lang/time/DurationFormatUtils.java	2016-08-31 21:38:03.038333571 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang63/cfix/org/apache/commons/lang/time/DurationFormatUtils.java	2016-08-31 21:38:02.978335336 +0900
@@ -936,8 +936,8 @@ Directories and files have the following structure.
              return 0;
 ```
 
-##lang7
-###Human
+## lang7
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang7/buggy/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:03.130330864 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang7/fix/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:03.154330159 +0900
@@ -966,7 +966,7 @@ Directories and files have the following structure.
      }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/lang/lang7/buggy/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:03.130330864 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/lang/lang7/cfix/org/apache/commons/lang3/math/NumberUtils.java	2016-08-31 21:38:03.110331452 +0900
@@ -989,8 +989,8 @@ Directories and files have the following structure.
          if (str.startsWith("0x") || str.startsWith("-0x") || str.startsWith("0X") || str.startsWith("-0X")) {
 ```
 
-##math101
-###Human
+## math101
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math101/buggy/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.186329217 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math101/fix/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.214328393 +0900
@@ -1005,7 +1005,7 @@ Directories and files have the following structure.
              getImaginaryCharacter()) != 0) {
              // set index back to initial, error index should be the start index
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math101/buggy/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.186329217 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math101/cfix/org/apache/commons/math/complex/ComplexFormat.java	2016-08-31 21:38:03.166329806 +0900
@@ -1023,8 +1023,8 @@ Directories and files have the following structure.
          parseAndIgnoreWhitespace(source, pos);
 ```
 
-##math20
-###Human
+## math20
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math20/buggy/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.270326747 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math20/fix/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.282326393 +0900
@@ -1039,7 +1039,7 @@ Directories and files have the following structure.
          }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math20/buggy/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.270326747 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math20/cfix/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2016-08-31 21:38:03.230327922 +0900
@@ -1054,8 +1054,8 @@ Directories and files have the following structure.
              d[0][c] = sum;
 ```
 
-##math24
-###Human
+## math24
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math24/buggy/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java	2016-08-31 21:38:03.374323687 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math24/fix/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java	2016-08-31 21:38:03.450321451 +0900
@@ -1078,7 +1078,7 @@ Directories and files have the following structure.
              ++iter;
          }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math24/buggy/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java	2016-08-31 21:38:03.374323687 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math24/cfix/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java	2016-08-31 21:38:03.290326158 +0900
@@ -1094,8 +1094,8 @@ Directories and files have the following structure.
                          Precision.equals(w, x)) {
 ```
 
-##math28
-###Human
+## math28
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math28/buggy/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2016-08-31 21:38:03.526319215 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math28/fix/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2016-08-31 21:38:03.598317098 +0900
@@ -1132,7 +1132,7 @@ Directories and files have the following structure.
          return minRatioPositions.get(0);
      }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math28/buggy/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2016-08-31 21:38:03.526319215 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math28/cfix/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2016-08-31 21:38:03.458321216 +0900
@@ -1154,8 +1154,8 @@ Directories and files have the following structure.
                      minRatioPositions = new ArrayList<Integer>();
 ```
 
-##math29
-###Human
+## math29
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math29/buggy/org/apache/commons/math3/linear/OpenMapRealVector.java	2016-08-31 21:38:03.630316156 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math29/fix/org/apache/commons/math3/linear/OpenMapRealVector.java	2016-08-31 21:38:03.682314627 +0900
@@ -1193,7 +1193,7 @@ Directories and files have the following structure.
      }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math29/buggy/org/apache/commons/math3/linear/OpenMapRealVector.java	2016-08-31 21:38:03.630316156 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math29/cfix/org/apache/commons/math3/linear/OpenMapRealVector.java	2016-08-31 21:38:03.610316744 +0900
@@ -1208,8 +1208,8 @@ Directories and files have the following structure.
          }
 ```
 
-##math3
-###Human
+## math3
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math3/buggy/org/apache/commons/math3/util/MathArrays.java	2016-08-31 21:38:03.922307567 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math3/fix/org/apache/commons/math3/util/MathArrays.java	2016-08-31 21:38:03.950306743 +0900
@@ -1225,7 +1225,7 @@ Directories and files have the following structure.
          final double[] prodHigh = new double[len];
          double prodLowSum = 0;
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math3/buggy/org/apache/commons/math3/util/MathArrays.java	2016-08-31 21:38:03.922307567 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math3/cfix/org/apache/commons/math3/util/MathArrays.java	2016-08-31 21:38:03.906308037 +0900
@@ -1240,8 +1240,8 @@ Directories and files have the following structure.
          for (int i = 0; i < len; i++) {
 ```
 
-##math30
-###Human
+## math30
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math30/buggy/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java	2016-08-31 21:38:03.782311684 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math30/fix/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java	2016-08-31 21:38:03.894308390 +0900
@@ -1255,7 +1255,7 @@ Directories and files have the following structure.
          // http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U#Normal_approximation
          final double EU = n1n2prod / 2.0;
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math30/buggy/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java	2016-08-31 21:38:03.782311684 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math30/cfix/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java	2016-08-31 21:38:03.702314038 +0900
@@ -1270,8 +1270,8 @@ Directories and files have the following structure.
  
 ```
 
-##math40
-###Human
+## math40
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math40/buggy/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java	2016-08-31 21:38:03.998305331 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math40/fix/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java	2016-08-31 21:38:04.042304038 +0900
@@ -1295,7 +1295,7 @@ Directories and files have the following structure.
                  // bracketing is balanced, try to find the root itself
                  targetY = 0;
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math40/buggy/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java	2016-08-31 21:38:03.998305331 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math40/cfix/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java	2016-08-31 21:38:03.974306037 +0900
@@ -1310,8 +1310,8 @@ Directories and files have the following structure.
                  // fall back to bisection
 ```
 
-##math41
-###Human
+## math41
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math41/buggy/org/apache/commons/math/stat/descriptive/moment/Variance.java	2016-08-31 21:38:04.098302393 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math41/fix/org/apache/commons/math/stat/descriptive/moment/Variance.java	2016-08-31 21:38:04.106302159 +0900
@@ -1325,7 +1325,7 @@ Directories and files have the following structure.
                  }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math41/buggy/org/apache/commons/math/stat/descriptive/moment/Variance.java	2016-08-31 21:38:04.098302393 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math41/cfix/org/apache/commons/math/stat/descriptive/moment/Variance.java	2016-08-31 21:38:04.058303568 +0900
@@ -1340,8 +1340,8 @@ Directories and files have the following structure.
                  Mean mean = new Mean();
 ```
 
-##math42
-###Human
+## math42
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math42/buggy/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:04.122301688 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math42/fix/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:04.130301454 +0900
@@ -1360,7 +1360,7 @@ Directories and files have the following structure.
                // then we choose the first and set the rest equal to 0
                coefficients[i] = 0 - (restrictToNonNegative ? 0 : mostNegative);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math42/buggy/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:04.122301688 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math42/cfix/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:04.114301923 +0900
@@ -1375,8 +1375,8 @@ Directories and files have the following structure.
          if (!restrictToNonNegative) {
 ```
 
-##math49
-###Human
+## math49
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math49/buggy/org/apache/commons/math/linear/OpenMapRealVector.java	2016-08-31 21:38:04.134301336 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math49/fix/org/apache/commons/math/linear/OpenMapRealVector.java	2016-08-31 21:38:04.142301100 +0900
@@ -1417,7 +1417,7 @@ Directories and files have the following structure.
              iter.advance();
              res.setEntry(iter.key(), iter.value() * v[iter.key()]);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math49/buggy/org/apache/commons/math/linear/OpenMapRealVector.java	2016-08-31 21:38:04.134301336 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math49/cfix/org/apache/commons/math/linear/OpenMapRealVector.java	2016-08-31 21:38:04.134301336 +0900
@@ -1432,8 +1432,8 @@ Directories and files have the following structure.
              entries.remove(index);
 ```
 
-##math5
-###Human
+## math5
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math5/buggy/org/apache/commons/math3/complex/Complex.java	2016-08-31 21:38:04.362294640 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math5/fix/org/apache/commons/math3/complex/Complex.java	2016-08-31 21:38:04.370294404 +0900
@@ -1447,7 +1447,7 @@ Directories and files have the following structure.
  
          if (isInfinite) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math5/buggy/org/apache/commons/math3/complex/Complex.java	2016-08-31 21:38:04.362294640 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math5/cfix/org/apache/commons/math3/complex/Complex.java	2016-08-31 21:38:04.326295696 +0900
@@ -1462,8 +1462,8 @@ Directories and files have the following structure.
          if (isInfinite) {
 ```
 
-##math50
-###Human
+## math50
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math50/buggy/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java	2016-08-31 21:38:04.206299221 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math50/fix/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java	2016-08-31 21:38:04.226298633 +0900
@@ -1479,7 +1479,7 @@ Directories and files have the following structure.
                  default:
                      // Should never happen.
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math50/buggy/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java	2016-08-31 21:38:04.206299221 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math50/cfix/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java	2016-08-31 21:38:04.154300748 +0900
@@ -1494,8 +1494,8 @@ Directories and files have the following structure.
                  default:
 ```
 
-##math57
-###Human
+## math57
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math57/buggy/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2016-08-31 21:38:04.278297107 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math57/fix/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2016-08-31 21:38:04.318295932 +0900
@@ -1509,7 +1509,7 @@ Directories and files have the following structure.
                  final T p = pointSet.get(i);
                  final Cluster<T> nearest = getNearestCluster(resultSet, p);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math57/buggy/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2016-08-31 21:38:04.278297107 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math57/cfix/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2016-08-31 21:38:04.238298281 +0900
@@ -1524,8 +1524,8 @@ Directories and files have the following structure.
              List<Cluster<T>> newClusters = new ArrayList<Cluster<T>>();
 ```
 
-##math62
-###Human
+## math62
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math62/buggy/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java	2016-08-31 21:38:04.422292877 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math62/fix/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java	2016-08-31 21:38:04.470291468 +0900
@@ -1551,7 +1551,7 @@ Directories and files have the following structure.
                  optima[i] = null;
              } catch (ConvergenceException ce) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math62/buggy/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java	2016-08-31 21:38:04.422292877 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math62/cfix/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java	2016-08-31 21:38:04.382294052 +0900
@@ -1566,8 +1566,8 @@ Directories and files have the following structure.
              } catch (ConvergenceException ce) {
 ```
 
-##math63
-###Human
+## math63
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math63/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.506290410 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math63/fix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.534289587 +0900
@@ -1581,7 +1581,7 @@ Directories and files have the following structure.
  
      /**
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math63/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.506290410 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math63/cfix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.482291114 +0900
@@ -1596,8 +1596,8 @@ Directories and files have the following structure.
      /**
 ```
 
-##math64
-###Human
+## math64
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math64/buggy/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java	2016-08-31 21:38:04.578288295 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math64/fix/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java	2016-08-31 21:38:04.598287708 +0900
@@ -1707,7 +1707,7 @@ Directories and files have the following structure.
                  // tests for termination and stringent tolerances
                  // (2.2204e-16 is the machine epsilon for IEEE754)
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math64/buggy/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java	2016-08-31 21:38:04.578288295 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math64/cfix/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java	2016-08-31 21:38:04.554289000 +0900
@@ -1722,8 +1722,8 @@ Directories and files have the following structure.
                  double actRed = -1.0;
 ```
 
-##math7
-###Human
+## math7
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math7/buggy/org/apache/commons/math3/ode/AbstractIntegrator.java	2016-08-31 21:38:04.750283243 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math7/fix/org/apache/commons/math3/ode/AbstractIntegrator.java	2016-08-31 21:38:04.774282538 +0900
@@ -1768,7 +1768,7 @@ Directories and files have the following structure.
                  }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math7/buggy/org/apache/commons/math3/ode/AbstractIntegrator.java	2016-08-31 21:38:04.750283243 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math7/cfix/org/apache/commons/math3/ode/AbstractIntegrator.java	2016-08-31 21:38:04.742283478 +0900
@@ -1784,8 +1784,8 @@ Directories and files have the following structure.
      /** {@inheritDoc} */
 ```
 
-##math75
-###Human
+## math75
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math75/buggy/org/apache/commons/math/stat/Frequency.java	2016-08-31 21:38:04.714284300 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math75/fix/org/apache/commons/math/stat/Frequency.java	2016-08-31 21:38:04.722284066 +0900
@@ -1799,7 +1799,7 @@ Directories and files have the following structure.
  
      /**
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math75/buggy/org/apache/commons/math/stat/Frequency.java	2016-08-31 21:38:04.714284300 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math75/cfix/org/apache/commons/math/stat/Frequency.java	2016-08-31 21:38:04.610287355 +0900
@@ -1814,8 +1814,8 @@ Directories and files have the following structure.
      /**
 ```
 
-##math79
-###Human
+## math79
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math79/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.726283949 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math79/fix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.734283713 +0900
@@ -1832,7 +1832,7 @@ Directories and files have the following structure.
        }
        return Math.sqrt(sum);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math79/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.726283949 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math79/cfix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:04.726283949 +0900
@@ -1847,8 +1847,8 @@ Directories and files have the following structure.
      }
 ```
 
-##math8
-###Human
+## math8
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math8/buggy/org/apache/commons/math3/distribution/DiscreteDistribution.java	2016-08-31 21:38:05.210269743 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math8/fix/org/apache/commons/math3/distribution/DiscreteDistribution.java	2016-08-31 21:38:05.222269391 +0900
@@ -1869,7 +1869,7 @@ Directories and files have the following structure.
          for (int i = 0; i < sampleSize; i++) {
              out[i] = sample();
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math8/buggy/org/apache/commons/math3/distribution/DiscreteDistribution.java	2016-08-31 21:38:05.210269743 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math8/cfix/org/apache/commons/math3/distribution/DiscreteDistribution.java	2016-08-31 21:38:05.202269978 +0900
@@ -1884,8 +1884,8 @@ Directories and files have the following structure.
              out[i] = sample();
 ```
 
-##math80
-###Human
+## math80
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math80/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.802281716 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math80/fix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.894279015 +0900
@@ -1899,7 +1899,7 @@ Directories and files have the following structure.
                  for (int k = 0; k < 4; k += step) {
                      final double tmp = work[i + k];
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math80/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.802281716 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math80/cfix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.786282186 +0900
@@ -1914,8 +1914,8 @@ Directories and files have the following structure.
                      work[i + k] = work[j - k];
 ```
 
-##math81
-###Human
+## math81
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math81/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.994276077 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math81/fix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:05.042274670 +0900
@@ -1948,7 +1948,7 @@ Directories and files have the following structure.
                      a2 = a2 + b2;
                      for (int i4 = nn - 17; i4 >= 4 * start + 2 + pingPong; i4 -= 4) {
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math81/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.994276077 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math81/cfix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2016-08-31 21:38:04.906278661 +0900
@@ -1963,8 +1963,8 @@ Directories and files have the following structure.
                  tType = -5;
 ```
 
-##math82
-###Human
+## math82
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math82/buggy/org/apache/commons/math/optimization/linear/SimplexSolver.java	2016-08-31 21:38:05.058274200 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math82/fix/org/apache/commons/math/optimization/linear/SimplexSolver.java	2016-08-31 21:38:05.074273731 +0900
@@ -1978,7 +1978,7 @@ Directories and files have the following structure.
                  if (ratio < minRatio) {
                      minRatio = ratio;
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math82/buggy/org/apache/commons/math/optimization/linear/SimplexSolver.java	2016-08-31 21:38:05.058274200 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math82/cfix/org/apache/commons/math/optimization/linear/SimplexSolver.java	2016-08-31 21:38:05.050274435 +0900
@@ -1993,8 +1993,8 @@ Directories and files have the following structure.
              }
 ```
 
-##math84
-###Human
+## math84
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math84/buggy/org/apache/commons/math/optimization/direct/MultiDirectional.java	2016-08-31 21:38:05.106272793 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math84/fix/org/apache/commons/math/optimization/direct/MultiDirectional.java	2016-08-31 21:38:05.114272558 +0900
@@ -2024,7 +2024,7 @@ Directories and files have the following structure.
              }
  
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math84/buggy/org/apache/commons/math/optimization/direct/MultiDirectional.java	2016-08-31 21:38:05.106272793 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math84/cfix/org/apache/commons/math/optimization/direct/MultiDirectional.java	2016-08-31 21:38:05.086273379 +0900
@@ -2039,8 +2039,8 @@ Directories and files have the following structure.
              // check convergence
 ```
 
-##math85
-###Human
+## math85
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math85/buggy/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java	2016-08-31 21:38:05.138271854 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math85/fix/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java	2016-08-31 21:38:05.166271033 +0900
@@ -2054,7 +2054,7 @@ Directories and files have the following structure.
                        "number of iterations={0}, maximum iterations={1}, " +
                        "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math85/buggy/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java	2016-08-31 21:38:05.138271854 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math85/cfix/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java	2016-08-31 21:38:05.122272324 +0900
@@ -2069,8 +2069,8 @@ Directories and files have the following structure.
                        "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +
 ```
 
-##math88
-###Human
+## math88
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math88/buggy/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:05.186270447 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math88/fix/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:05.194270212 +0900
@@ -2100,7 +2100,7 @@ Directories and files have the following structure.
          }
          return new RealPointValuePair(coefficients, f.getValue(coefficients));
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math88/buggy/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:05.186270447 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math88/cfix/org/apache/commons/math/optimization/linear/SimplexTableau.java	2016-08-31 21:38:05.178270681 +0900
@@ -2115,8 +2115,8 @@ Directories and files have the following structure.
                  }
 ```
 
-##math94
-###Human
+## math94
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math94/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:05.258268335 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math94/fix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:05.266268101 +0900
@@ -2130,7 +2130,7 @@ Directories and files have the following structure.
          }
          // keep u and v negative, as negative integers range down to
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/math/math94/buggy/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:05.258268335 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/math/math94/cfix/org/apache/commons/math/util/MathUtils.java	2016-08-31 21:38:05.234269039 +0900
@@ -2145,8 +2145,8 @@ Directories and files have the following structure.
          // keep u and v negative, as negative integers range down to
 ```
 
-##time11
-###Human
+## time11
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/time/time11/buggy/org/joda/time/tz/ZoneInfoCompiler.java	2016-08-31 21:38:05.878250154 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/time/time11/fix/org/joda/time/tz/ZoneInfoCompiler.java	2016-08-31 21:38:05.898249567 +0900
@@ -2167,7 +2167,7 @@ Directories and files have the following structure.
      /**
       * Gets a flag indicating that verbose logging is required.
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/time/time11/buggy/org/joda/time/tz/ZoneInfoCompiler.java	2016-08-31 21:38:05.878250154 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/time/time11/cfix/org/joda/time/tz/ZoneInfoCompiler.java	2016-08-31 21:38:05.874250271 +0900
@@ -2184,8 +2184,8 @@ Directories and files have the following structure.
      //-----------------------------------------------------------------------
 ```
 
-##time4
-###Human
+## time4
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/time/time4/buggy/org/joda/time/Partial.java	2016-08-31 21:38:06.170241597 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/time/time4/fix/org/joda/time/Partial.java	2016-08-31 21:38:06.254239138 +0900
@@ -2199,7 +2199,7 @@ Directories and files have the following structure.
              return newPartial;
          }
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/time/time4/buggy/org/joda/time/Partial.java	2016-08-31 21:38:06.170241597 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/time/time4/cfix/org/joda/time/Partial.java	2016-08-31 21:38:06.162241832 +0900
@@ -2214,8 +2214,8 @@ Directories and files have the following structure.
          }
 ```
 
-##time7
-###Human
+## time7
+### Human
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/time/time7/buggy/org/joda/time/format/DateTimeFormatter.java	2016-08-31 21:38:06.322237147 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/time/time7/fix/org/joda/time/format/DateTimeFormatter.java	2016-08-31 21:38:06.370235742 +0900
@@ -2231,7 +2231,7 @@ Directories and files have the following structure.
          DateTimeParserBucket bucket = new DateTimeParserBucket(
              instantLocal, chrono, iLocale, iPivotYear, defaultYear);
 ```
-###ConFix
+### ConFix
 ```diff
 --- /home/ec2-user/cfix_exp/cfix-patch/time/time7/buggy/org/joda/time/format/DateTimeFormatter.java	2016-08-31 21:38:06.322237147 +0900
 +++ /home/ec2-user/cfix_exp/cfix-patch/time/time7/cfix/org/joda/time/format/DateTimeFormatter.java	2016-08-31 21:38:06.278238436 +0900
